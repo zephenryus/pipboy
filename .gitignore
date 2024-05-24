@@ -17,3 +17,6 @@ Thumbs.db
 # Logs and temporary files
 *.log
 *.tmp
+
+# Large files
+*.psd

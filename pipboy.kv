@@ -1,0 +1,444 @@
+<PipBoyWidget>:
+    ScreenManager:
+        id: content_manager
+        current: "status_content"
+        SpecialScreen:
+        StatusScreen:
+    ScreenManager:
+        id: header_manager
+        current: "special_header"
+        StatsHeader:
+    Footer:
+
+<StatsHeader>:
+    name: "special_header"
+    FloatLayout:
+        pos: 32 * app.scale, 264 * app.scale
+        size_hint: None, None
+        size: 416 * app.scale, 40 * app.scale
+        canvas:
+            Color:
+                rgba: app.color
+            Line:
+                points: 32 * app.scale, 264 * app.scale, 32 * app.scale, 288 * app.scale, 59 * app.scale, 288 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 132 * app.scale, 288 * app.scale, 190 * app.scale, 288 * app.scale, 190 * app.scale, 264 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 196 * app.scale, 288 * app.scale, 272 * app.scale, 288 * app.scale, 272 * app.scale, 264 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 278 * app.scale, 288 * app.scale, 344 * app.scale, 288 * app.scale, 344 * app.scale, 264 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 350 * app.scale, 288 * app.scale, 448 * app.scale, 288 * app.scale, 448 * app.scale, 264 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+
+        # STATS Header
+        Label:
+            text: "[color=40e191]STATS[/color]"
+            font_size: 18 * app.scale
+            text_size: self.size
+            size_hint: None, None
+            halign: 'center'
+            valign: 'middle'
+            # 59 - 132
+            pos: (59 + ((132 - 59) / 2) - (self.width / app.scale / 2.)) * app.scale, (286 - (self.height / app.scale / 2.)) * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+
+        # Level
+        Label:
+            text: "[color=40e191]LVL[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, None
+            halign: 'left'
+            valign: 'bottom'
+            pos: 145 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+        Label:
+            text: "[color=40e191]12[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, 1
+            width: 16 * app.scale
+            halign: 'right'
+            valign: 'bottom'
+            pos: 170 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+            max_lines: 1
+
+        # Hit Points
+        Label:
+            text: "[color=40e191]HP[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, None
+            halign: 'left'
+            valign: 'bottom'
+            pos: 199 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+        Label:
+            text: "[color=40e191]306/340[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, 1
+            width: 51 * app.scale
+            halign: 'right'
+            valign: 'bottom'
+            pos: 217 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+            max_lines: 1
+
+        # Actions Points
+        Label:
+            text: "[color=40e191]AP[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, None
+            halign: 'left'
+            valign: 'bottom'
+            pos: 280 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+        Label:
+            text: "[color=40e191]79/79[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, 1
+            width: 41 * app.scale
+            halign: 'right'
+            valign: 'bottom'
+            pos: 298 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+            max_lines: 1
+
+        # Experience Points
+        Label:
+            text: "[color=40e191]XP[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, None
+            halign: 'left'
+            valign: 'bottom'
+            pos: 351 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+        Label:
+            text: "[color=40e191]10529/12300[/color]"
+            font_size: 13 * app.scale
+            text_size: self.size
+            size_hint: None, 1
+            width: 76 * app.scale
+            halign: 'right'
+            valign: 'bottom'
+            pos: 368 * app.scale, 268 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+            max_lines: 1
+
+
+<Footer>:
+    FloatLayout:
+        pos: 32 * app.scale, 16 * app.scale
+        size_hint: None, None
+        size: 416 * app.scale, 40 * app.scale
+        canvas:
+            Color:
+                rgba: app.color
+            Line:
+                points: 32 * app.scale, 56 * app.scale, 32 * app.scale, 32 * app.scale, 51 * app.scale, 32 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 107 * app.scale, 32 * app.scale, 118 * app.scale, 32 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 204 * app.scale, 32 * app.scale, 215 * app.scale, 32 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 268 * app.scale, 32 * app.scale, 297 * app.scale, 32 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 348 * app.scale, 32 * app.scale, 371 * app.scale, 32 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+            Line:
+                points: 434 * app.scale, 32 * app.scale, 448 * app.scale, 32 * app.scale, 448 * app.scale, 56 * app.scale
+                width: 1 * app.scale
+                cap: 'none'
+                joint: 'miter'
+                close: False
+
+    # Status Tab
+    Label:
+        text: "[color=40e191]Status[/color]"
+        font_size: 15 * app.scale
+        size_hint: None, None
+        height: app.pad_y(self.texture_size, padding=6 * app.scale)
+        width: (107 - 51) * app.scale
+        halign: 'center'
+        valign: 'middle'
+        # 51 - 107 (59 - 132)
+        pos: (51 + ((107 - 51) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
+        font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+        markup: True
+        canvas.before:
+            Color:
+                rgba: app.color_opacity(app.color, 0.2)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+            Color:
+                rgba: app.color
+            Line:
+                rectangle: (self.x, self.y, self.width, self.height)
+                width: 1 * app.scale
+
+    # S.P.E.C.I.A.L. Tab
+    Label:
+        text: "[color=40e191]S.P.E.C.I.A.L.[/color]"
+        font_size: 15 * app.scale
+        size_hint: None, None
+        height: app.pad_y(self.texture_size, padding=6 * app.scale)
+        width: (204 - 118) * app.scale
+        halign: 'center'
+        valign: 'middle'
+        # 118 - 204
+        pos: (118 + ((204 - 118) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
+        font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+        markup: True
+        canvas.before:
+#            Color:
+#                rgba: app.color_opacity(app.color, 0.2)
+#            Rectangle:
+#                pos: self.pos
+#                size: self.size
+#            Color:
+#                rgba: app.color
+#            Line:
+#                rectangle: (self.x, self.y, self.width, self.height)
+#                width: 1 * app.scale
+
+    # Skills Tab
+    Label:
+        text: "[color=40e191]Skills[/color]"
+        font_size: 15 * app.scale
+        size_hint: None, None
+        height: app.pad_y(self.texture_size, padding=6 * app.scale)
+        halign: 'center'
+        valign: 'middle'
+        # 215 - 268
+        width: (268 - 215) * app.scale
+        pos: (215 + ((268 - 215) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
+        font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+        markup: True
+        canvas.before:
+#            Color:
+#                rgba: app.color_opacity(app.color, 0.2)
+#            Rectangle:
+#                pos: self.pos
+#                size: self.size
+#            Color:
+#                rgba: app.color
+#            Line:
+#                rectangle: (self.x, self.y, self.width, self.height)
+#                width: 1 * app.scale
+
+    # Perks Tab
+    Label:
+        text: "[color=40e191]Perks[/color]"
+        font_size: 15 * app.scale
+        size_hint: None, None
+        height: app.pad_y(self.texture_size, padding=6 * app.scale)
+        halign: 'center'
+        valign: 'middle'
+        # 297 - 348
+        width: (348 - 297) * app.scale
+        pos: (297 + ((348 - 297) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
+        font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+        markup: True
+        canvas.before:
+#            Color:
+#                rgba: app.color_opacity(app.color, 0.2)
+#            Rectangle:
+#                pos: self.pos
+#                size: self.size
+#            Color:
+#                rgba: app.color
+#            Line:
+#                rectangle: (self.x, self.y, self.width, self.height)
+#                width: 1 * app.scale
+
+    # General Tab
+    Label:
+        text: "[color=40e191]General[/color]"
+        font_size: 15 * app.scale
+        size_hint: None, None
+        height: app.pad_y(self.texture_size, padding=6 * app.scale)
+        halign: 'center'
+        valign: 'middle'
+        # 371 - 434
+        width: (434 - 371) * app.scale
+        pos: (371 + ((434 - 371) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
+        font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+        markup: True
+        canvas.before:
+#            Color:
+#                rgba: app.color_opacity(app.color, 0.2)
+#            Rectangle:
+#                pos: self.pos
+#                size: self.size
+#            Color:
+#                rgba: app.color
+#            Line:
+#                rectangle: (self.x, self.y, self.width, self.height)
+#                width: 1 * app.scale
+
+
+<SpecialScreen>:
+    name: 'special_content'
+    FloatLayout:
+        pos_hint: {'x': 0.0667, 'y': 0.175}
+        size_hint: 0.333, 0.65
+        canvas:
+            Color:
+                rgba: 100/255., 66/255., 32/255., 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Stats"
+    FloatLayout:
+        pos_hint: {'x': 0.4, 'y': 0.4}
+        size_hint: 0.533, 0.425
+        canvas:
+            Color:
+                rgba: 45/255., 65/255., 32/255., 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Image"
+    FloatLayout:
+        pos_hint: {'x': 0.4, 'y': 0.175}
+        size_hint: 0.533, 0.225
+        canvas:
+            Color:
+                rgba: 37/255., 65/255., 64/255., 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Description"
+
+<StatusScreen>:
+    name: 'status_content'
+
+    FloatLayout:
+        # Condition Tab
+        Label:
+            text: "[color=40e191]CND[/color]"
+            font_size: 13 * app.scale
+            size_hint: None, None
+            height: 22 * app.scale
+            halign: 'center'
+            valign: 'middle'
+            width: 44 * app.scale
+            pos: 32 * app.scale, 236 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+            canvas.before:
+                Color:
+                    rgba: app.color_opacity(app.color, 0.2)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                Color:
+                    rgba: app.color
+                Line:
+                    rectangle: (self.x, self.y, self.width, self.height)
+                    width: 1 * app.scale
+
+        # Radiation Tab
+        Label:
+            text: "[color=40e191]RAD[/color]"
+            font_size: 13 * app.scale
+            size_hint: None, None
+            height: 22 * app.scale
+            halign: 'center'
+            valign: 'middle'
+            width: 44 * app.scale
+            pos: 32 * app.scale, 214 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+#            canvas.before:
+#                Color:
+#                    rgba: app.color_opacity(app.color, 0.2)
+#                Rectangle:
+#                    pos: self.pos
+#                    size: self.size
+#                Color:
+#                    rgba: app.color
+#                Line:
+#                    rectangle: (self.x, self.y, self.width, self.height)
+#                    width: 1 * app.scale
+
+        # Effects Tab
+        Label:
+            text: "[color=40e191]EFF[/color]"
+            font_size: 13 * app.scale
+            size_hint: None, None
+            height: 22 * app.scale
+            halign: 'center'
+            valign: 'middle'
+            width: 44 * app.scale
+            pos: 32 * app.scale, 192 * app.scale
+            font_name: "/Users/750022100KJ/PycharmProjects/pipboy/assets/Amazon Ember Cd RC.otf"
+            markup: True
+#            canvas.before:
+#                Color:
+#                    rgba: app.color_opacity(app.color, 0.2)
+#                Rectangle:
+#                    pos: self.pos
+#                    size: self.size
+#                Color:
+#                    rgba: app.color
+#                Line:
+#                    rectangle: (self.x, self.y, self.width, self.height)
+#                    width: 1 * app.scale

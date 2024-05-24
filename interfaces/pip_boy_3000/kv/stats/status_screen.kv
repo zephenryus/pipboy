@@ -1,0 +1,35 @@
+#:kivy 1.0.9
+<StatusScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: "Status Screen - PIP-Boy 3000"
+
+        BoxLayout:
+            id: button_container
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: '50dp'
+
+            Button:
+                id: btn_status
+                text: 'Status'
+                on_release: app.root.current = 'status'
+
+            Button:
+                id: btn_special
+                text: 'S.P.E.C.I.A.L.'
+                on_release: app.root.current = 'special'
+
+            Button:
+                id: btn_skills
+                text: 'Skills'
+
+            Button:
+                id: btn_perks
+                text: 'Perks'
+
+            Button:
+                id: btn_general
+                text: 'General'
