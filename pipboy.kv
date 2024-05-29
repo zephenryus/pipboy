@@ -18,7 +18,7 @@
         size: 416 * app.scale, 40 * app.scale
         canvas:
             Color:
-                rgba: app.color
+                rgba: 1, 1, 1, 1
             Line:
                 points: 32 * app.scale, 264 * app.scale, 32 * app.scale, 288 * app.scale, 59 * app.scale, 288 * app.scale
                 width: 1 * app.scale
@@ -52,7 +52,7 @@
 
         # STATS Header
         Label:
-            text: "[color=40e191]STATS[/color]"
+            text: "[color=ffffff]STATS[/color]"
             font_size: 18 * app.scale
             text_size: self.size
             size_hint: None, None
@@ -60,22 +60,22 @@
             valign: 'middle'
             # 59 - 132
             pos: (59 + ((132 - 59) / 2) - (self.width / app.scale / 2.)) * app.scale, (286 - (self.height / app.scale / 2.)) * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
 
         # Level
         Label:
-            text: "[color=40e191]LVL[/color]"
+            text: "[color=ffffff]LVL[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, None
             halign: 'left'
             valign: 'bottom'
             pos: 145 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
         Label:
-            text: "[color=40e191]12[/color]"
+            text: "[color=ffffff]12[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, 1
@@ -83,23 +83,23 @@
             halign: 'right'
             valign: 'bottom'
             pos: 170 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
             max_lines: 1
 
         # Hit Points
         Label:
-            text: "[color=40e191]HP[/color]"
+            text: "[color=ffffff]HP[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, None
             halign: 'left'
             valign: 'bottom'
             pos: 199 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
         Label:
-            text: "[color=40e191]20/340[/color]"
+            text: "[color=ffffff]20/340[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, 1
@@ -107,23 +107,23 @@
             halign: 'right'
             valign: 'bottom'
             pos: 217 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
             max_lines: 1
 
         # Actions Points
         Label:
-            text: "[color=40e191]AP[/color]"
+            text: "[color=ffffff]AP[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, None
             halign: 'left'
             valign: 'bottom'
             pos: 280 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
         Label:
-            text: "[color=40e191]79/79[/color]"
+            text: "[color=ffffff]79/79[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, 1
@@ -131,23 +131,23 @@
             halign: 'right'
             valign: 'bottom'
             pos: 298 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
             max_lines: 1
 
         # Experience Points
         Label:
-            text: "[color=40e191]XP[/color]"
+            text: "[color=ffffff]XP[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, None
             halign: 'left'
             valign: 'bottom'
             pos: 351 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
         Label:
-            text: "[color=40e191]10529/12300[/color]"
+            text: "[color=ffffff]10529/12300[/color]"
             font_size: 13 * app.scale
             text_size: self.size
             size_hint: None, 1
@@ -155,7 +155,7 @@
             halign: 'right'
             valign: 'bottom'
             pos: 368 * app.scale, 268 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
             max_lines: 1
 
@@ -167,7 +167,7 @@
         size: 416 * app.scale, 40 * app.scale
         canvas:
             Color:
-                rgba: app.color
+                rgba: 1, 1, 1, 1
             Line:
                 points: 32 * app.scale, 56 * app.scale, 32 * app.scale, 32 * app.scale, 51 * app.scale, 32 * app.scale
                 width: 1 * app.scale
@@ -207,7 +207,7 @@
 
     # Status Tab
     Label:
-        text: "[color=40e191]Status[/color]"
+        text: "[color=ffffff]Status[/color]"
         font_size: 15 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
@@ -216,23 +216,23 @@
         valign: 'middle'
         # 51 - 107 (59 - 132)
         pos: (51 + ((107 - 51) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
-        font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+        font_name: "assets/fonts/monofonto rg.otf"
         markup: True
         canvas.before:
             Color:
-                rgba: app.color_opacity(app.color, 0.2)
+                rgba: 1, 1, 1, 0.2
             Rectangle:
                 pos: self.pos
                 size: self.size
             Color:
-                rgba: app.color
+                rgba: 1, 1, 1, 1
             Line:
                 rectangle: (self.x, self.y, self.width, self.height)
                 width: 1 * app.scale
 
     # S.P.E.C.I.A.L. Tab
     Label:
-        text: "[color=40e191]S.P.E.C.I.A.L.[/color]"
+        text: "[color=ffffff]S.P.E.C.I.A.L.[/color]"
         font_size: 15 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
@@ -241,7 +241,7 @@
         valign: 'middle'
         # 118 - 204
         pos: (118 + ((204 - 118) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
-        font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+        font_name: "assets/fonts/monofonto rg.otf"
         markup: True
         canvas.before:
 #            Color:
@@ -257,7 +257,7 @@
 
     # Skills Tab
     Label:
-        text: "[color=40e191]Skills[/color]"
+        text: "[color=ffffff]Skills[/color]"
         font_size: 15 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
@@ -266,7 +266,7 @@
         # 215 - 268
         width: (268 - 215) * app.scale
         pos: (215 + ((268 - 215) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
-        font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+        font_name: "assets/fonts/monofonto rg.otf"
         markup: True
         canvas.before:
 #            Color:
@@ -282,7 +282,7 @@
 
     # Perks Tab
     Label:
-        text: "[color=40e191]Perks[/color]"
+        text: "[color=ffffff]Perks[/color]"
         font_size: 15 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
@@ -291,7 +291,7 @@
         # 297 - 348
         width: (348 - 297) * app.scale
         pos: (297 + ((348 - 297) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
-        font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+        font_name: "assets/fonts/monofonto rg.otf"
         markup: True
         canvas.before:
 #            Color:
@@ -307,7 +307,7 @@
 
     # General Tab
     Label:
-        text: "[color=40e191]General[/color]"
+        text: "[color=ffffff]General[/color]"
         font_size: 15 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
@@ -316,7 +316,7 @@
         # 371 - 434
         width: (434 - 371) * app.scale
         pos: (371 + ((434 - 371) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
-        font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+        font_name: "assets/fonts/monofonto rg.otf"
         markup: True
         canvas.before:
 #            Color:
@@ -373,7 +373,7 @@
     FloatLayout:
         # Condition Tab
         Label:
-            text: "[color=40e191]CND[/color]"
+            text: "[color=ffffff]CND[/color]"
             font_size: 13 * app.scale
             size_hint: None, None
             height: 22 * app.scale
@@ -381,7 +381,7 @@
             valign: 'middle'
             width: 44 * app.scale
             pos: 32 * app.scale, 236 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
             canvas.before:
                 Color:
@@ -397,7 +397,7 @@
 
         # Radiation Tab
         Label:
-            text: "[color=40e191]RAD[/color]"
+            text: "[color=ffffff]RAD[/color]"
             font_size: 13 * app.scale
             size_hint: None, None
             height: 22 * app.scale
@@ -405,7 +405,7 @@
             valign: 'middle'
             width: 44 * app.scale
             pos: 32 * app.scale, 214 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
 #            canvas.before:
 #                Color:
@@ -421,7 +421,7 @@
 
         # Effects Tab
         Label:
-            text: "[color=40e191]EFF[/color]"
+            text: "[color=ffffff]EFF[/color]"
             font_size: 13 * app.scale
             size_hint: None, None
             height: 22 * app.scale
@@ -429,7 +429,7 @@
             valign: 'middle'
             width: 44 * app.scale
             pos: 32 * app.scale, 192 * app.scale
-            font_name: "assets/AmazonEmberCdRC_Rg.ttf"
+            font_name: "assets/fonts/monofonto rg.otf"
             markup: True
 #            canvas.before:
 #                Color:
@@ -443,44 +443,65 @@
 #                    rectangle: (self.x, self.y, self.width, self.height)
 #                    width: 1 * app.scale
 
+        # Center: 236, 164
         Image:
             source: "assets/textures/interface/shared/line/face_00.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 280, 300
+            size: 41 * app.scale, 41 * app.scale
+            pos: (236 - 15) * app.scale, (164 + 33) * app.scale
+            allow_stretch: True
 
         Image:
             source: "assets/textures/interface/shared/line/head.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 300, 300
+            size: 82 * app.scale, 82 * app.scale
+            pos: (236 - 24) * app.scale, (164 + 10) * app.scale
+            allow_stretch: True
 
         Image:
             source: "assets/textures/interface/shared/line/torso.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 288, 214
+            size: 84 * app.scale, 84 * app.scale
+            pos: (236 - 33) * app.scale, (164 - 47) * app.scale
+            allow_stretch: True
 
         Image:
             source: "assets/textures/interface/shared/line/left_arm.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 378, 245
+            size: 85 * app.scale, 42.5 * app.scale
+            pos: (236 + 26) * app.scale, (164 - 6) * app.scale
+            allow_stretch: True
 
         Image:
             source: "assets/textures/interface/shared/line/right_arm.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 196, 250
+            size: 85 * app.scale, 42.5 * app.scale
+            pos: (236 - 92) * app.scale, (164 - 2) * app.scale
+            allow_stretch: True
 
         Image:
             source: "assets/textures/interface/shared/line/left_leg.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 336, 125
+            size: 83 * app.scale, 83 * app.scale
+            pos: (236 - 1) * app.scale, (164 - 104) * app.scale
+            allow_stretch: True
 
         Image:
             source: "assets/textures/interface/shared/line/right_leg.png"
             size_hint: None, None
-            size: 300, 300
-            pos: 251, 128
+            size: 85 * app.scale, 85 * app.scale
+            pos: (236 - 58) * app.scale, (164 - 103) * app.scale
+            allow_stretch: True
+
+        # Player Tag
+        Label:
+            text: "[color=ffffff]Arliss - Level 12[/color]"
+            font_size: 13 * app.scale
+            size_hint: None, None
+            height: 22 * app.scale
+            halign: 'center'
+            valign: 'middle'
+            width: 416 * app.scale
+            pos: 32 * app.scale, 48 * app.scale
+            font_name: "assets/fonts/monofonto rg.otf"
+            markup: True
