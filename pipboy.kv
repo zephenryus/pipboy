@@ -1,12 +1,17 @@
+<ClickableLabel>:
+
+
 <PipBoyWidget>:
     ScreenManager:
         id: content_manager
         current: "status_content"
+#        transition: NoTransition()
         SpecialScreen:
         StatusScreen:
     ScreenManager:
         id: header_manager
         current: "special_header"
+#        transition: NoTransition()
         StatsHeader:
     Footer:
 
@@ -206,9 +211,9 @@
                 close: False
 
     # Status Tab
-    Label:
+    ClickableLabel:
         text: "[color=ffffff]Status[/color]"
-        font_size: 15 * app.scale
+        font_size: 11 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
         width: (107 - 51) * app.scale
@@ -218,6 +223,7 @@
         pos: (51 + ((107 - 51) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
         font_name: "assets/fonts/monofonto rg.otf"
         markup: True
+        on_press: app.switch_screen('status_content')
         canvas.before:
             Color:
                 rgba: 1, 1, 1, 0.2
@@ -231,9 +237,9 @@
                 width: 1 * app.scale
 
     # S.P.E.C.I.A.L. Tab
-    Label:
+    ClickableLabel:
         text: "[color=ffffff]S.P.E.C.I.A.L.[/color]"
-        font_size: 15 * app.scale
+        font_size: 11 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
         width: (204 - 118) * app.scale
@@ -243,6 +249,7 @@
         pos: (118 + ((204 - 118) / 2) - (self.width / app.scale / 2.)) * app.scale, (32 - (self.height / app.scale / 2.)) * app.scale
         font_name: "assets/fonts/monofonto rg.otf"
         markup: True
+        on_press: app.switch_screen('special_content')
         canvas.before:
 #            Color:
 #                rgba: app.color_opacity(app.color, 0.2)
@@ -258,7 +265,7 @@
     # Skills Tab
     Label:
         text: "[color=ffffff]Skills[/color]"
-        font_size: 15 * app.scale
+        font_size: 11 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
         halign: 'center'
@@ -283,7 +290,7 @@
     # Perks Tab
     Label:
         text: "[color=ffffff]Perks[/color]"
-        font_size: 15 * app.scale
+        font_size: 11 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
         halign: 'center'
@@ -308,7 +315,7 @@
     # General Tab
     Label:
         text: "[color=ffffff]General[/color]"
-        font_size: 15 * app.scale
+        font_size: 11 * app.scale
         size_hint: None, None
         height: app.pad_y(self.texture_size, padding=6 * app.scale)
         halign: 'center'
@@ -385,12 +392,12 @@
             markup: True
             canvas.before:
                 Color:
-                    rgba: app.color_opacity(app.color, 0.2)
+                    rgba: 1, 1, 1, 0.2
                 Rectangle:
                     pos: self.pos
                     size: self.size
                 Color:
-                    rgba: app.color
+                    rgba: 1, 1, 1, 1
                 Line:
                     rectangle: (self.x, self.y, self.width, self.height)
                     width: 1 * app.scale
